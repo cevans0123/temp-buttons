@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Temperature Buttons </title>
+    <script>
+        var cTemp = 0;
+        function convertTemp(cTemp) {
+            var fTemp = ((cTemp * 9)/5) + 32;
+            alert(cTemp + " degrees Celsius = " + "\n" + fTemp + " degrees Farenheit");
+        }
+    </script> 
+</head>
+<body>
+    <input type="button" onclick = "convertTemp(cTemp)" />
+    <input type="button" id="id1" name="10" value="10" onclick = "convertTemp(this.value)" />
+    <input type="button" id="id2" name="20" value="20" onclick = "convertTemp(this.value)" />
+    <input type="button" id="id3" name="30" value="30" onclick = "convertTemp(this.value)" />
+</body>
+</html>
